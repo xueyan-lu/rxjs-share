@@ -1,9 +1,8 @@
 import { useEffect, useRef } from 'react';
 import useCommonLongpress from './longpress/common';
 import useRxjsLongpress from './longpress/rxjs';
-import {schedulers, animate} from './schedulers/schedulers';
-// import './debugger/rxjs-spy';
-import './debugger/ajax-spy';
+import { schedulers, animate } from './schedulers/schedulers';
+import './debugger/rxjs-spy';
 import './App.css';
 
 // schedulers();
