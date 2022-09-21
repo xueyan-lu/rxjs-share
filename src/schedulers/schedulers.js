@@ -3,9 +3,6 @@
 // asap	Async(异步微任务)	Promise.resolve().then(() => task)
 // async	Async(异步宏任务)	 setInterval,  setTimeout
 // animationFrame	Async(异步宏任务?)	 requestAnimationFrame(task)
-// When used without delay, it schedules given task synchronously - executes it right when it is scheduled. However when called recursively, that is when inside the scheduled task, another task is scheduled with queue scheduler, instead of executing immediately as well, that task will be put on a queue and wait for current one to finish.
-
-// This means that when you execute task with queue scheduler, you are sure it will end before any other task scheduled with that scheduler will start.
 import { asyncScheduler, asapScheduler, queueScheduler, animationFrameScheduler } from 'rxjs';
 
 const log = console.log;
